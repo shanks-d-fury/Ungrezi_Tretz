@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -24,10 +25,31 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<head>
+				<link
+					rel="stylesheet"
+					href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+					integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+					crossOrigin="anonymous"
+					referrerPolicy="no-referrer"
+				/>
+			</head>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 				suppressHydrationWarning
 			>
+				<header className="fixed top-0 left-0 right-0 z-50">
+					<div className="h-15 bg-white w-full rounded-b-lg rounded-bl-lg flex justify-between items-center">
+						<Image
+							src="/cosma-logo.svg"
+							alt="Cosma Logo"
+							width={120}
+							height={40}
+							className="relative left-4"
+							priority
+						/>
+					</div>
+				</header>
 				{children}
 			</body>
 		</html>

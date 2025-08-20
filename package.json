@@ -12,6 +12,7 @@
 	"dependencies": {
 		"@types/mongoose": "^5.11.96",
 		"dotenv": "^17.2.1",
+		"ldrs": "^1.1.7",
 		"mongoose": "^8.17.2",
 		"next": "15.5.0",
 		"react": "19.1.0",

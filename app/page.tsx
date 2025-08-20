@@ -1,8 +1,11 @@
 "use client";
-import Image from "next/image";
+
 import { useState } from "react";
 import Card, { PackageData } from "@/components/Card";
-
+import { TailChase } from "ldrs/react";
+import "ldrs/react/TailChase.css";
+import { Waveform } from "ldrs/react";
+import "ldrs/react/Waveform.css";
 interface SearchResponse {
 	searchTerm: string;
 	packages: PackageData[];
@@ -55,18 +58,6 @@ export default function Home() {
 	};
 	return (
 		<>
-			<header className="fixed top-0 left-0 right-0 z-50">
-				<div className="h-15 bg-white w-full rounded-b-lg rounded-bl-lg flex justify-between items-center">
-					<Image
-						src="/cosma-logo.svg"
-						alt="Cosma Logo"
-						width={120}
-						height={40}
-						className="relative left-4"
-						priority
-					/>
-				</div>
-			</header>
 			<main className="min-h-screen bg-[#ffdff2] pt-4">
 				<div className="flex items-center justify-center py-10">
 					<div className="w-[980px] text-center p-10">
@@ -114,23 +105,10 @@ export default function Home() {
 									disabled={loading}
 								>
 									{loading ? (
-										<div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
+										// Default values shown
+										<TailChase size="17" speed="1.75" color="white" />
 									) : (
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="18"
-											height="18"
-											viewBox="0 0 24 24"
-											fill="none"
-											stroke="currentColor"
-											strokeWidth="2"
-											strokeLinecap="round"
-											strokeLinejoin="round"
-											className="text-white"
-										>
-											<circle cx="11" cy="11" r="7"></circle>
-											<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-										</svg>
+										<i className="fa-solid fa-magnifying-glass"></i>
 									)}
 								</button>
 							</div>
@@ -143,29 +121,8 @@ export default function Home() {
 					<div className="py-8">
 						<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 							{loading ? (
-								<div className="text-center">
-									<div className="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-pink-500 bg-white">
-										<div className="animate-spin -ml-1 mr-3 h-5 w-5 text-pink-500">
-											<svg className="h-5 w-5" viewBox="0 0 24 24">
-												<circle
-													className="opacity-25"
-													cx="12"
-													cy="12"
-													r="10"
-													stroke="currentColor"
-													strokeWidth="4"
-													fill="none"
-												/>
-												<path
-													className="opacity-75"
-													fill="currentColor"
-													d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-												/>
-											</svg>
-										</div>
-										Searching for treatments...
-									</div>
-								</div>
+								// Default values shown
+								<Waveform size="35" stroke="3.5" speed="1" color="white" />
 							) : (
 								<>
 									<div className="text-center mb-8">
