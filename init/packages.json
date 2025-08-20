@@ -1,0 +1,50 @@
+[
+	{
+		"clinic_name": "Glow Aesthetics Clinic",
+		"package_name": "Advanced Acne Scar Treatment",
+		"treatment_name": "Microneedling",
+		"price": 15000
+	},
+	{
+		"clinic_name": "Skin Revival Center",
+		"package_name": "Chemical Peel for Acne Scars",
+		"treatment_name": "Chemical Peel",
+		"price": 8000
+	},
+	{
+		"clinic_name": "Elite Dermatology",
+		"package_name": "Laser Resurfacing Premium",
+		"treatment_name": "Laser Resurfacing",
+		"price": 25000
+	},
+	{
+		"clinic_name": "Beauty Enhancement Studio",
+		"package_name": "Under-eye Brightening Filler",
+		"treatment_name": "Under-eye Filler",
+		"price": 18000
+	},
+	{
+		"clinic_name": "Rejuvenation Clinic",
+		"package_name": "PRP Dark Circle Treatment",
+		"treatment_name": "PRP Under-eye",
+		"price": 12000
+	},
+	{
+		"clinic_name": "Contour Aesthetics",
+		"package_name": "HIFU Double Chin Reduction",
+		"treatment_name": "HIFU",
+		"price": 22000
+	},
+	{
+		"clinic_name": "Sculpt & Slim Clinic",
+		"package_name": "Kybella Chin Contouring",
+		"treatment_name": "Kybella",
+		"price": 20000
+	},
+	{
+		"clinic_name": "Perfect Skin Clinic",
+		"package_name": "Comprehensive Acne Scar Solution",
+		"treatment_name": "Laser Resurfacing",
+		"price": 30000
+	}
+]

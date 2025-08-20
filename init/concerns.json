@@ -1,0 +1,30 @@
+[
+	{
+		"name": "Acne Scars",
+		"treatment_name": "Microneedling"
+	},
+	{
+		"name": "Acne Scars",
+		"treatment_name": "Chemical Peel"
+	},
+	{
+		"name": "Acne Scars",
+		"treatment_name": "Laser Resurfacing"
+	},
+	{
+		"name": "Dark Circles",
+		"treatment_name": "Under-eye Filler"
+	},
+	{
+		"name": "Dark Circles",
+		"treatment_name": "PRP Under-eye"
+	},
+	{
+		"name": "Double Chin",
+		"treatment_name": "HIFU"
+	},
+	{
+		"name": "Double Chin",
+		"treatment_name": "Kybella"
+	}
+]
