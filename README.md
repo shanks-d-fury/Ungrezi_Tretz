@@ -1,6 +1,6 @@
 # Ungrezi Tretz - Beauty Treatment Search & Enquiry Platform
 
-> **Live Demo:** [Add your hosted URL here]
+> **Live Demo:** https://ungrezi-tretz.vercel.app/
 
 A modern, full-stack web application for searching beauty treatments and managing customer enquiries. Built with Next.js 15, TypeScript, MongoDB, and Tailwind CSS.
 
