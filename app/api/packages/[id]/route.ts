@@ -4,12 +4,12 @@ import { Package } from "@/models";
 
 export async function GET(
 	request: NextRequest,
-	{ params }: { params: { id: string } }
+	{ params }: { params: Promise<{ id: string }> }
 ) {
 	try {
 		await connectDB();
 
-		const packageId = params.id;
+		const { id: packageId } = await params;
 
 		if (!packageId) {
 			return NextResponse.json(

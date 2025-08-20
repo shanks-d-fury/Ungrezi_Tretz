@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 import { LineSpinner, Reuleaux } from "ldrs/react";
 import "ldrs/react/LineSpinner.css";
 import "ldrs/react/Reuleaux.css";
@@ -126,19 +127,6 @@ export default function EnquiryPage() {
 
 	return (
 		<>
-			<header className="fixed top-0 left-0 right-0 z-50">
-				<div className="h-15 bg-white w-full rounded-b-lg rounded-bl-lg flex justify-between items-center">
-					<Image
-						src="/cosma-logo.svg"
-						alt="Cosma Logo"
-						width={120}
-						height={40}
-						className="relative left-4"
-						priority
-					/>
-				</div>
-			</header>
-
 			<main className="min-h-screen bg-[#ffdff2] pt-20">
 				<div className="max-w-2xl mx-auto px-4 py-8">
 					<div className="bg-white rounded-lg shadow-lg p-8">

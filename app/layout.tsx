@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -40,14 +41,16 @@ export default function RootLayout({
 			>
 				<header className="fixed top-0 left-0 right-0 z-50">
 					<div className="h-15 bg-white w-full rounded-b-lg rounded-bl-lg flex justify-between items-center">
-						<Image
-							src="/cosma-logo.svg"
-							alt="Cosma Logo"
-							width={120}
-							height={40}
-							className="relative left-4"
-							priority
-						/>
+						<Link href="/" className="relative left-4 block z-100">
+							<Image
+								src="/cosma-logo.svg"
+								alt="Cosma Logo"
+								width={120}
+								height={40}
+								className="cursor-pointer hover:opacity-80 transition-opacity"
+								priority
+							/>
+						</Link>
 					</div>
 				</header>
 				{children}
