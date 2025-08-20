@@ -1,8 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import EnquiryCard from "./enquiryCard";
-import Image from "next/image";
-import Link from "next/link";
+import EnquiryCard from "@/components/enquiryCard";
 import { DotWave } from "ldrs/react";
 import "ldrs/react/DotWave.css";
 

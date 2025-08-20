@@ -51,6 +51,12 @@ export default function RootLayout({
 								priority
 							/>
 						</Link>
+						<Link href="/admin/enquiry" className="relative right-4 z-100">
+							{" "}
+							<div className="bg-[#FB64B6] px-4 py-1 rounded-2xl text-white">
+								Admin
+							</div>
+						</Link>
 					</div>
 				</header>
 				{children}
