@@ -127,7 +127,7 @@ export default function Home() {
 								<>
 									<div className="text-center mb-8">
 										<h2 className="text-2xl font-bold text-gray-900">
-											Search Results for "{searchTerm}"
+											Search Results for &quot;{searchTerm}&quot;
 										</h2>
 										<p className="text-gray-600 mt-2">
 											Found {packages.length} treatment package

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import connectDB from "@/lib/mongodb";
-import { Concern, Package, Treatment } from "@/models";
+import { Concern, Package } from "@/models";
 
 export async function GET(request: NextRequest) {
 	try {

@@ -1,5 +1,6 @@
 import connectDB from "../lib/mongodb";
 import { Treatment, Concern, Package, Enquiry } from "../models";
+import { Types } from "mongoose";
 import treatmentsData from "./treatments.json";
 import concernsData from "./concerns.json";
 import packagesData from "./packages.json";
@@ -21,7 +22,7 @@ async function seedDatabase() {
 		console.log("✅ Seeded treatments:", treatments.length);
 
 		// Create a map of treatment names to IDs
-		const treatmentMap: { [key: string]: any } = {};
+		const treatmentMap: Record<string, Types.ObjectId> = {};
 		treatments.forEach((treatment) => {
 			treatmentMap[treatment.name] = treatment._id;
 		});
@@ -47,7 +48,7 @@ async function seedDatabase() {
 		console.log("✅ Seeded packages:", packages.length);
 
 		// Create a map of package names to IDs
-		const packageMap: Record<string, any> = {};
+		const packageMap: Record<string, Types.ObjectId> = {};
 		packages.forEach((pkg) => {
 			const key = `${pkg.package_name}-${pkg.clinic_name}`;
 			packageMap[key] = pkg._id;

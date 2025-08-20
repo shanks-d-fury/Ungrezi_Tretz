@@ -1,8 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
-import Image from "next/image";
-import Link from "next/link";
 import { LineSpinner, Reuleaux } from "ldrs/react";
 import "ldrs/react/LineSpinner.css";
 import "ldrs/react/Reuleaux.css";
